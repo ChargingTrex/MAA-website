@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./maa-backend
+    container_name: maa-backend
+    restart: unless-stopped
+    ports:
+      - "5000:5000"
+    environment:
+      - NODE_ENV=production
+      - PORT=5000
+      - JWT_SECRET=change_this_to_a_secure_random_string
+      - FRONTEND_URL=http://your-domain.com
+    volumes:
+      - ./maa-backend/database.sqlite:/app/database.sqlite
+      - ./maa-backend/uploads:/app/uploads
+
+  frontend:
+    build: ./maa-v.0-improvement
+    container_name: maa-frontend
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    depends_on:
+      - backend

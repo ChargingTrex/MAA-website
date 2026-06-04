@@ -1,0 +1,10 @@
+CREATE TABLE `admins` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `email` VARCHAR(255) NOT NULL UNIQUE, `password` VARCHAR(255) NOT NULL, `created_at` DATETIME NOT NULL);
+CREATE TABLE sqlite_sequence(name,seq);
+CREATE TABLE `gallery_photos` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `filename` VARCHAR(255) NOT NULL, `filepath` VARCHAR(512) NOT NULL, `caption` VARCHAR(500), `category` TEXT, `created_at` DATETIME NOT NULL);
+CREATE TABLE `gallery_videos` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `filename` VARCHAR(255) NOT NULL, `filepath` VARCHAR(512) NOT NULL, `thumbnail` VARCHAR(512), `title` VARCHAR(255), `created_at` DATETIME NOT NULL);
+CREATE TABLE `team_members` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `name` VARCHAR(255) NOT NULL, `designation` VARCHAR(255) NOT NULL, `qualification` VARCHAR(255), `photo_path` VARCHAR(512), `display_order` INTEGER DEFAULT 0, `created_at` DATETIME NOT NULL);
+CREATE TABLE `csr_activities` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `title` VARCHAR(255) NOT NULL, `description` TEXT, `date` DATE, `images` JSON, `created_at` DATETIME NOT NULL);
+CREATE TABLE `page_content` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `page_key` VARCHAR(100) NOT NULL, `block_key` VARCHAR(100) NOT NULL, `content_en` TEXT, `content_te` TEXT, `content_hi` TEXT, `content_ta` TEXT, `updated_at` DATETIME NOT NULL);
+CREATE UNIQUE INDEX `page_content_page_key_block_key` ON `page_content` (`page_key`, `block_key`);
+CREATE TABLE `facility_items` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `title` VARCHAR(255) NOT NULL, `description` TEXT, `category` VARCHAR(50) DEFAULT 'general', `image_path` VARCHAR(512), `display_order` INTEGER DEFAULT 0, `created_at` DATETIME NOT NULL);
+CREATE TABLE `sponsor_needs` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `name` VARCHAR(255) NOT NULL, `cost` VARCHAR(255) NOT NULL, `status` TEXT DEFAULT 'Needed', `description` TEXT, `display_order` INTEGER DEFAULT 0, `created_at` DATETIME NOT NULL);

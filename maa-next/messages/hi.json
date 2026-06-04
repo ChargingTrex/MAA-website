@@ -1,0 +1,22 @@
+{
+  "Navigation": {
+    "home": "होम",
+    "about": "हमारे बारे में",
+    "services": "सेवाएं",
+    "infrastructure": "बुनियादी ढांचा",
+    "medicalFacilities": "चिकित्सा सुविधाएं",
+    "ourTeam": "हमारी टीम",
+    "gallery": "गैलरी",
+    "csr": "सीएसआर गतिविधियां",
+    "contact": "संपर्क करें",
+    "donate": "दान करें",
+    "sponsor": "प्रायोजक"
+  },
+  "LocaleSwitcher": {
+    "label": "भाषा बदलें",
+    "en": "English",
+    "hi": "हिंदी",
+    "te": "తెలుగు",
+    "ta": "தமிழ்"
+  }
+}
