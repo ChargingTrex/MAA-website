@@ -42,7 +42,7 @@ npm run dev
 ### 2. Start the Frontend
 Open a second terminal window and run:
 ```bash
-cd maa-v.0-improvement
+cd maa-frontend
 npm install
 npm run dev
 ```
@@ -60,7 +60,7 @@ When the backend starts for the first time, it automatically creates a default a
 ---
 
 ## 📂 Project Structure
-- `/maa-v.0-improvement`: Frontend React (Vite) application
+- `/maa-frontend`: Frontend React (Vite) application
 - `/maa-backend`: Node.js/Express backend server
 - `docker-compose.yml`: Docker configuration to run both services together
 - `requirements.txt`: List of all Node dependencies used in the project

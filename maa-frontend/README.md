@@ -33,7 +33,7 @@ src/
 Make sure you have Node.js (v16+) installed.
 
 ### Installation
-1. Navigate to this directory (`maa-v.0-improvement`).
+1. Navigate to this directory (`maa-frontend`).
 2. Install the dependencies:
    ```bash
    npm install

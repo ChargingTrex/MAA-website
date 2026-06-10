@@ -17,7 +17,7 @@ sequelize
 sqlite3
 uuid
 
-# Frontend Dependencies (maa-v.0-improvement)
+# Frontend Dependencies (maa-frontend)
 @vercel/analytics
 axios
 clsx

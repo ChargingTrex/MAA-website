@@ -4,7 +4,7 @@ Welcome to the official web application for the MAA Saraswati Veterinary Hospita
 
 ## 🛠 Tech Stack
 
-### Frontend (`maa-v.0-improvement/`)
+### Frontend (`maa-frontend/`)
 - **React 18** (UI Library)
 - **Vite** (Build Tool)
 - **Tailwind CSS** (Styling)
@@ -26,7 +26,7 @@ Welcome to the official web application for the MAA Saraswati Veterinary Hospita
 ```
 MAA-website/
 │
-├── maa-v.0-improvement/    # The Frontend React Application
+├── maa-frontend/           # The Frontend React Application
 │   ├── src/
 │   │   ├── components/     # Reusable UI components (Public & Admin)
 │   │   ├── pages/          # Page components (Home, Gallery, Admin CMS, etc)
@@ -71,7 +71,7 @@ npm run dev
 ### 2. Start the Frontend Development Server
 Open a second terminal window and navigate to the frontend folder:
 ```bash
-cd maa-v.0-improvement
+cd maa-frontend
 ```
 Install dependencies:
 ```bash

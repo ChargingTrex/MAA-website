@@ -17,7 +17,7 @@ services:
       - ./maa-backend/uploads:/app/uploads
 
   frontend:
-    build: ./maa-v.0-improvement
+    build: ./maa-frontend
     container_name: maa-frontend
     restart: unless-stopped
     ports:
