@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Mukta:wght@400;500;600;700&family=Noto+Sans+Telugu:wght@400;500;600;700&family=Noto+Sans+Tamil:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Reset */
+* {
+  @apply box-border;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #FFF8F0;
+}
+
+body {
+  @apply font-body text-charcoal;
+  border-top: 4px solid #F4830F;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  @apply font-display font-bold;
+  letter-spacing: -0.5px;
+}
+
+h1 {
+  @apply text-4xl md:text-5xl lg:text-6xl;
+}
+
+h2 {
+  @apply text-3xl md:text-4xl lg:text-5xl;
+}
+
+h3 {
+  @apply text-2xl md:text-3xl lg:text-4xl;
+}
+
+h4 {
+  @apply text-xl md:text-2xl;
+}
+
+p {
+  @apply leading-relaxed;
+}
+
+/* Custom Components */
+.section-wrapper {
+  @apply max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-12 md:py-16 lg:py-20;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center px-6 py-3 rounded-full bg-saffron text-white font-semibold transition-all duration-200 hover:bg-saffron-dark active:scale-95;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center px-6 py-3 rounded-full bg-forest text-white font-semibold transition-all duration-200 hover:bg-forest-dark active:scale-95;
+}
+
+.btn-outline {
+  @apply inline-flex items-center justify-center px-6 py-3 rounded-full border-2 border-saffron text-saffron font-semibold transition-all duration-200 hover:bg-saffron hover:text-white active:scale-95;
+}
+
+.card {
+  @apply bg-white rounded-2xl shadow-soft hover:shadow-md transition-shadow duration-200;
+}
+
+.card-interactive {
+  @apply card cursor-pointer hover:-translate-y-1 transition-transform duration-200;
+}
+
+/* Forms */
+input, textarea, select {
+  @apply rounded-lg border border-muted-light px-4 py-2 focus:outline-none focus:ring-2 focus:ring-saffron focus:ring-opacity-40 transition-all duration-200;
+}
+
+input::placeholder, textarea::placeholder {
+  @apply text-muted;
+}
+
+/* Layout */
+#root {
+  @apply flex flex-col min-h-screen;
+}
+
+main {
+  @apply flex-1;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.animate-slide-in-down {
+  animation: slideInDown 0.4s ease-out forwards;
+}
+
+/* Utilities */
+.text-balance {
+  text-wrap: balance;
+}
+
+.text-pretty {
+  text-wrap: pretty;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #F4830F;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D96C0A;
+}

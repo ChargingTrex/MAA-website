@@ -1,0 +1,65 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "infrastructure": "Infrastructure",
+    "medical": "Medical Facilities",
+    "team": "Our Team",
+    "gallery": "Gallery",
+    "csr": "CSR Activities",
+    "donate": "Donate",
+    "sponsor": "Sponsor",
+    "contact": "Contact",
+    "admin": "Admin"
+  },
+  "common": {
+    "donate_now": "Donate Now",
+    "learn_more": "Learn More",
+    "contact_us": "Contact Us",
+    "emergency": "Emergency",
+    "call_now": "Call Now",
+    "read_more": "Read More",
+    "see_all": "See All",
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "success": "Success!",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "back": "Back",
+    "logout": "Logout"
+  },
+  "home": {
+    "hero_title": "Compassionate Veterinary Care for All Animals",
+    "hero_subtitle": "MAA Saraswati Veterinary Hospital has been serving the animal community since 2024",
+    "mission": "Our Mission",
+    "vision": "Our Vision",
+    "services": "Our Services",
+    "stats_surgeries": "Surgeries Performed",
+    "stats_animals": "Animals Treated",
+    "stats_staff": "Dedicated Staff",
+    "stats_years": "Years of Service"
+  },
+  "about": {
+    "title": "About MAA Saraswati",
+    "story": "Our Story",
+    "mission": "Our Mission",
+    "vision": "Our Vision",
+    "highlights": "Our Highlights"
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "form_title": "Send us a Message",
+    "name": "Your Name",
+    "email": "Your Email",
+    "phone": "Phone Number",
+    "subject": "Subject",
+    "message": "Your Message",
+    "send": "Send Message",
+    "address": "Address",
+    "phone_label": "Phone",
+    "email_label": "Email",
+    "hours": "Working Hours"
+  }
+}

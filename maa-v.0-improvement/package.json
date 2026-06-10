@@ -1,0 +1,37 @@
+{
+  "type": "module",
+  "name": "my-project",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@vercel/analytics": "1.6.1",
+    "axios": "^1.16.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.5.6",
+    "i18next": "^23.7.6",
+    "lucide-react": "^0.564.0",
+    "mime-types": "^3.0.2",
+    "puppeteer": "^25.1.0",
+    "react": "^19",
+    "react-dom": "^19",
+    "react-hook-form": "^7.54.1",
+    "react-hot-toast": "^2.4.1",
+    "react-i18next": "^13.5.0",
+    "react-router-dom": "^6.28.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5",
+    "tailwindcss": "^3.4.1",
+    "vite": "^5.4.0",
+    "vite-plugin-singlefile": "^2.3.3"
+  }
+}
