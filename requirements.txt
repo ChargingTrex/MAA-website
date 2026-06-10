@@ -1,0 +1,43 @@
+# System Requirements
+- Node.js (v18.x or higher recommended)
+- npm (Node Package Manager)
+
+# Backend Dependencies (maa-backend)
+bcryptjs
+cookie-parser
+cors
+dotenv
+express
+express-rate-limit
+helmet
+jsonwebtoken
+multer
+nodemailer
+sequelize
+sqlite3
+uuid
+
+# Frontend Dependencies (maa-v.0-improvement)
+@vercel/analytics
+axios
+clsx
+framer-motion
+i18next
+lucide-react
+mime-types
+puppeteer
+react
+react-dom
+react-hook-form
+react-hot-toast
+react-i18next
+react-router-dom
+zod
+
+# Frontend DevDependencies
+@vitejs/plugin-react
+autoprefixer
+postcss
+tailwindcss
+vite
+vite-plugin-singlefile
